@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/ReviesViews.74779ee6.chunk.css","mappings":"AAAA,sBAEE,qBAAuB,CACvB,iBAAkB,CAFlB,YAGF,CACA,GAEE,eACF","sources":["components/Revies/Revies.module.css"],"sourcesContent":[".coment{\n  padding: 20px;  \n  border: solid 1px black;\n  margin-bottom: 5px;\n}\nh3{\n  margin: 0;\n  margin-bottom: 10px;\n}"],"names":[],"sourceRoot":""}
