@@ -22,9 +22,9 @@ export const App = () => {
     <>
     <Suspense>
     <Container >
-    <Navigation path="/"/> 
+    <Navigation /> 
     <Routes>
-       <Route  index element={<HomePageViews/>}/>
+       <Route path="/" element={<HomePageViews/>}/>
        <Route path="/moviese" element={<MoviesViews/>}/>
        <Route path="/movies/:movieId/" element={<MovieDetailsViews/>}>
            <Route  path="cast" element={<CastViews/>}/>
