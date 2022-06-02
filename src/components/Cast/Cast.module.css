@@ -1,0 +1,25 @@
+.list{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+.wrapp{
+    width: 1024px;
+}
+.item{
+    width: 245px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    border: solid 1px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+}
+.item:last-child{
+    margin-right: 0px;
+}
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
