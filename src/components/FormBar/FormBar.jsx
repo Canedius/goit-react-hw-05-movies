@@ -1,5 +1,6 @@
 import s from "./FormBar.module.css"
 import { useState,} from "react"
+import PropTypes from 'prop-types'; // ES6
 
 function FormBar({onSubmit}) {
 const [value,setValue] = useState("")
@@ -30,3 +31,8 @@ const moviesChange =(e)=>{
  </>
 }
 export default FormBar
+
+FormBar.propTypes={
+  onSubmit :PropTypes.func.isRequired
+    
+}

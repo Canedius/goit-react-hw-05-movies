@@ -38,7 +38,7 @@ export async function getMovie(query) {
   
   
   try {
-      const response = await axios.get(`/3/search/movie?api_key=${KEY}&language=en-US&query=${query}&page=1&include_adult=false`);
+      const response = await axios.get(`/3/search/movie?api_key=${KEY}&language=en-US&query=${query}&page=1`);
       if (!response.data.results.length > 0) {
        alert("Фильм не найден ")
        return

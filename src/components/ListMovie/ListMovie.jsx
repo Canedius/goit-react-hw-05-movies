@@ -1,4 +1,5 @@
 import s from "./ListMovie.module.css"
+import PropTypes from 'prop-types'; // ES6
 import {Link,useLocation} from "react-router-dom"
 function ListMovie({films}) {
     const location = useLocation()
@@ -26,6 +27,15 @@ function ListMovie({films}) {
         </section>
       )
     
-}
+} 
 
 export  default ListMovie
+
+ListMovie.propTypes={
+  films :PropTypes.arrayOf(
+    PropTypes.shape({
+    id: PropTypes.number.isRequired,
+    title: PropTypes.string.isRequired,
+    poster_path: PropTypes.string,
+  }))
+}
