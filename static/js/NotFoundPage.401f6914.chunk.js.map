@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/NotFoundPage.401f6914.chunk.js","mappings":"2JAGA,UAHA,SAAsBA,GAClB,OAAO","sources":["views/NotFoundPage.jsx"],"sourcesContent":["function NotFoundPage(params) {\n    return <h2>Страница не найдена 404</h2>\n}\nexport default NotFoundPage"],"names":["params"],"sourceRoot":""}
