@@ -10,7 +10,7 @@ function ListMovie({films}) {
           {films.map(({id,title,poster_path})=>{
             const avatar = poster_path ?`https://image.tmdb.org/t/p/w500${poster_path}`:DeafaultImg
            return <li title={title} className={s.filmCardItem} key={id}>
-             <Link to={`/movies/${id}`} state={{from:location}}> 
+             <Link to={`/movies/${id}`} state={{from:location}} className={s.link}> 
             <div>
                 <img className={s.imgMovie}
                   src={avatar}
