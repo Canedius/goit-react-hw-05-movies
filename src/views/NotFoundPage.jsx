@@ -1,0 +1,4 @@
+function NotFoundPage(params) {
+    return <h2>Страница не найдена 404</h2>
+}
+export default NotFoundPage
