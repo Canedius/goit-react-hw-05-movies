@@ -22,18 +22,17 @@ export const App = () => {
   return (
     <>
     <Suspense>
-    <Container >
-    <Navigation /> 
     <Routes>
-       <Route path="/" element={<HomePageViews/>}/>
-       <Route path="/moviese" element={<MoviesViews/>}/>
-       <Route path="/movies/:movieId/" element={<MovieDetailsViews/>}>
-           <Route  path="cast" element={<CastViews/>}/>
-           <Route  path="revies" element={<ReviesViews/>}/>
+      <Route path="/" element={<Navigation/>}>
+        <Route index element={<HomePageViews/>}/>
+        <Route path="/moviese" element={<MoviesViews/>}/>
+        <Route path="/movies/:movieId/" element={<MovieDetailsViews/>}>
+          <Route  path="cast" element={<CastViews/>}/>
+          <Route  path="revies" element={<ReviesViews/>}/>
+        </Route>
+        <Route path="*" element={<NotFoundPage/>}/>
        </Route>
-       <Route path="*" element={<NotFoundPage/>}/>
    </Routes>
-   </Container>
    </Suspense>
    </>  
   );

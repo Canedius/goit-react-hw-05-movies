@@ -1,5 +1,6 @@
 import s from "./Navigation.module.css"
-import {NavLink} from "react-router-dom"
+import {NavLink,Outlet} from "react-router-dom"
+import Container from "components/Container/Container"
 
 const Navigation=({children})=>{
 return<>
@@ -9,8 +10,10 @@ return<>
         <NavLink className={({isActive})=>isActive?s.active:s.link} to="/moviese">Moviese</NavLink>
     </nav>      
 </header>
-{children}  
-    </>
+<Container>
+<Outlet/>
+</Container>    
+</>
 }
 
 export default Navigation
