@@ -29,8 +29,8 @@ const goBack=()=>{
          <div className={s.additional}>
          <p>Additional information</p>
          <ul>
-           <li><NavLink to="cast"  >Cast</NavLink></li>
-           <li><NavLink to="revies">Revies</NavLink></li>
+           <li><NavLink state={location.state} to="cast"  >Cast</NavLink></li>
+           <li><NavLink state={location.state} to="revies">Revies</NavLink></li>
          </ul>
          </div>
          <Outlet />
